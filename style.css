@@ -2032,3 +2032,15 @@ body {
         padding-bottom: 0;
     }
 }
+
+
+/* Abejita sobre “¡Te Esperamos!”: vuelo suave y continuo */
+.waiting-bee-fly{will-change:transform;transform-origin:center;animation:waitingBeeFlight 4.2s ease-in-out infinite;}
+@keyframes waitingBeeFlight{
+  0%{transform:translate3d(-10%,0,0) rotate(-4deg);}
+  25%{transform:translate3d(7%,-10px,0) rotate(3deg);}
+  50%{transform:translate3d(12%,1px,0) rotate(-2deg);}
+  75%{transform:translate3d(-4%,-7px,0) rotate(4deg);}
+  100%{transform:translate3d(-10%,0,0) rotate(-4deg);}
+}
+@media (prefers-reduced-motion:reduce){.waiting-bee-fly{animation:none;}}
