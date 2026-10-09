@@ -2035,14 +2035,14 @@ body {
 
 
 /* Sugerencia de regalos */
-.gifts{max-width:390px;margin:32px auto 28px;padding:24px 16px;background:linear-gradient(145deg,#fffaf1,#fbeeea);border:1px solid rgba(169,124,31,.25);border-radius:28px;box-shadow:0 8px 22px rgba(106,77,43,.06)}
-.gifts-ornament{font-size:25px;letter-spacing:6px;margin-bottom:12px}
+.gifts{max-width:390px;margin:32px auto 28px;padding:24px 14px;background:linear-gradient(145deg,#fffaf1,#fbeeea);border:1px solid rgba(169,124,31,.25);border-radius:28px;box-shadow:0 8px 22px rgba(106,77,43,.06)}
+.gifts-ornament{display:block;width:64px;height:64px;object-fit:contain;margin:0 auto 10px}
 .gifts h2{font-size:clamp(30px,8vw,36px);line-height:1.2;margin:0 0 20px;color:var(--plum)}
 .gifts-list{display:grid;gap:12px;list-style:none;margin:0;padding:0;text-align:left}
-.gifts-list li{display:flex;align-items:center;gap:14px;padding:12px 14px;background:rgba(255,255,255,.7);border:1px solid rgba(227,180,71,.2);border-radius:18px;font-size:16px;line-height:1.45}
-.gift-icon{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;background:var(--cream);border-radius:50%;font-size:27px}
-.gifts-list strong{color:var(--plum)}
-@media(max-width:360px){.gifts{padding:22px 12px}.gifts-list li{gap:10px;padding:10px;font-size:15px}}
+.gifts-list li{display:grid;grid-template-columns:80px minmax(0,1fr);align-items:center;gap:12px;min-height:104px;padding:12px;background:#fffaf7;border:1px solid rgba(227,180,71,.25);border-radius:18px}
+.gifts .gift-image{display:block;width:80px;height:80px;object-fit:contain;margin:0}
+.gifts .gift-description{display:block;margin:0;padding:0;color:#71385e;font-family:Montserrat,system-ui,sans-serif;font-size:16px;font-weight:700;line-height:1.5;text-align:left;opacity:1;visibility:visible;overflow-wrap:break-word}
+@media(max-width:360px){.gifts{padding:22px 10px}.gifts-list li{grid-template-columns:64px minmax(0,1fr);gap:10px;padding:10px;min-height:94px}.gifts .gift-image{width:64px;height:64px}.gifts .gift-description{font-size:15px}}
 
 /* Abejita sobre “¡Te Esperamos!”: vuelo suave y continuo */
 .waiting-bee-fly{
